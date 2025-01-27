@@ -8,7 +8,7 @@ interface PrimaryButtonProps {
 const PrimaryButton: React.FC<PrimaryButtonProps> = ({ className, text }) => {
   return (
     <div
-      className={`py-5 rounded-lg leading-5 uppercase text-black bg-primary ${className}`}
+      className={`cursor-pointer py-2 md:py-5 rounded-lg leading-5 uppercase text-black bg-primary ${className}`}
     >
       {text}
     </div>
