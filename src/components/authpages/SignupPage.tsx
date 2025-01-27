@@ -5,7 +5,7 @@ import { FcGoogle } from "react-icons/fc";
 import { FaXTwitter } from "react-icons/fa6";
 import PrimaryButton from "../shared/shared-button/PrimaryButton";
 import { SubmitHandler, useForm } from "react-hook-form";
-import { IFormInput } from "@/types/signup";
+import { IFormInput } from "@/types/formInput";
 // import { useRouter } from "next/navigation";
 // import { toast } from "sonner";
 
