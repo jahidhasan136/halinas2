@@ -15,7 +15,7 @@ const PrimaryButton: React.FC<PrimaryButtonProps> = ({
 }) => {
   return (
     <button
-      className={`cursor-pointer py-2 md:py-5 rounded-lg leading-5 uppercase text-black bg-primary hover:bg-white border border-primary transition-all duration-300 w-full ${className}`}
+      className={`cursor-pointer py-2 md:py-5 rounded-lg leading-5 uppercase text-black bg-primary hover:bg-white border border-primary transition-all duration-300 ${className}`}
       type={type}
       disabled={isLoading}
     >

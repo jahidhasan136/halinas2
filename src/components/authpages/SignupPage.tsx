@@ -173,7 +173,7 @@ const SignupPage = () => {
             </div>
           </div>
           <PrimaryButton
-            className="font-bold leading-5 text-black mt-10"
+            className="font-bold leading-5 text-black mt-10 w-full"
             text="Sign Up"
             type="submit"
           />
