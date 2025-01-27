@@ -126,6 +126,18 @@ const LoginPage = () => {
               )}
             </div>
           </div>
+          <div className="text-left md:flex justify-between items-center mt-2">
+            <p className="text-black2 font-bold flex items-center gap-3">
+              <input type="checkbox" />
+              Remember Me
+            </p>
+            <Link
+              href="/forget-password"
+              className="text-secondary font-bold text-left mt-2 md:mt-0"
+            >
+              Forgot Password
+            </Link>
+          </div>
           <PrimaryButton
             className="font-bold leading-5 text-black mt-10 w-full"
             text="Login"
