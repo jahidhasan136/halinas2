@@ -5,7 +5,7 @@ import classOverlay from "@/assets/class-overlay.svg";
 
 const ClassCard = () => {
   return (
-    <div className="relative w-[282px] h-[252px] rounded-2xl">
+    <div className="relative w-[282px] h-[252px] rounded-2xl mx-auto">
       <Image
         width={282}
         height={252}

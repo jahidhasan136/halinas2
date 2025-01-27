@@ -9,3 +9,19 @@
 body {
   font-family: var(--font-mulish);
 }
+
+/* swiper codes */
+.swiper-pagination {
+  position: static !important;
+  margin-top: 44px;
+}
+
+.swiper-pagination-bullet {
+  width: 10px !important;
+  height: 10px !important;
+  background-color: #ffefef !important;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #e0e721 !important;
+}
