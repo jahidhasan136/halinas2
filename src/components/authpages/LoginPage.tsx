@@ -5,8 +5,10 @@ import React from "react";
 import { SubmitHandler, useForm } from "react-hook-form";
 import PrimaryButton from "../shared/shared-button/PrimaryButton";
 import Link from "next/link";
+import { Eye, EyeOff } from "lucide-react";
 
 const LoginPage = () => {
+  const [showPassword, setShowPassword] = React.useState(false);
   const {
     register,
     handleSubmit,
@@ -89,16 +91,34 @@ const LoginPage = () => {
               >
                 Password*
               </label>
-              <input
-                type="password"
-                id="password"
-                placeholder="Enter your password"
-                className="w-full border border-black2/20 rounded-lg px-5 py-[22px] text-black2 font-bold placeholder:text-black2"
-                {...register("password", {
-                  required: "Password is required",
-                  minLength: 6,
-                })}
-              />
+              <div className="relative">
+                <input
+                  type={showPassword ? "text" : "password"}
+                  id="password"
+                  placeholder="Enter your password"
+                  className="w-full border border-black2/20 rounded-lg px-5 pr-10 py-[22px] text-black2 font-bold placeholder:text-black2"
+                  {...register("password", {
+                    required: "Password is required",
+                    minLength: {
+                      value: 8,
+                      message: "Password must be at least 8 characters",
+                    },
+                  })}
+                />
+                <button
+                  className="absolute right-5 top-1/2 h-4 w-4 -translate-y-1/2 transform"
+                  onClick={() => setShowPassword(!showPassword)}
+                >
+                  {showPassword ? (
+                    <Eye className="h-4 w-4" />
+                  ) : (
+                    <EyeOff className="h-4 w-4" />
+                  )}
+                  <span className="sr-only">
+                    {showPassword ? "Hide password" : "Show password"}
+                  </span>
+                </button>
+              </div>
               {errors?.password && (
                 <p className="text-red-500 text-sm text-left">
                   {errors?.password?.message}*
