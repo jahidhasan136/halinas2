@@ -1,3 +1,4 @@
+import About from "@/components/home/About";
 import Banner from "@/components/home/Banner";
 import FindClass from "@/components/home/FindClass";
 import SubscriptionPlan from "@/components/home/SubscriptionPlan";
@@ -9,6 +10,7 @@ const page = () => {
       <Banner />
       <SubscriptionPlan />
       <FindClass />
+      <About />
     </div>
   );
 };
