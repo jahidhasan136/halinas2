@@ -1,8 +1,6 @@
 "use client";
 
 import React from "react";
-import { FcGoogle } from "react-icons/fc";
-import { FaXTwitter } from "react-icons/fa6";
 import PrimaryButton from "../shared/shared-button/PrimaryButton";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { IFormInput } from "@/types/formInput";
@@ -43,26 +41,7 @@ const SignupPage = () => {
           join our 100% free creative network
         </p>
       </div>
-      <div className="grid gap-6 mt-11">
-        <div className="border border-black2/20 rounded-lg">
-          <button className="flex items-center gap-2 font-bold leading-6 text-xl py-5 mx-auto">
-            <FcGoogle />
-            <span>Sign up with Google</span>
-          </button>
-        </div>
-        <div className="border border-black2/20 rounded-lg">
-          <button className="flex items-center gap-2 font-bold leading-6 text-xl py-5 mx-auto">
-            <FaXTwitter />
-            <span>Sign up with X</span>
-          </button>
-        </div>
-      </div>
-      <div className="my-6 flex justify-between items-center gap-[10px]">
-        <div className="border-black2/20 border-b w-full"></div>
-        <p className="uppercase text-black2/70 font-medium leading-5">or</p>
-        <div className="border-black2/20 border-b w-full"></div>
-      </div>
-      <div className="mb-4">
+      <div className="mb-4 mt-11">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid gap-6">
             <div className="grid gap-4">
