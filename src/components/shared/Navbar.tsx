@@ -47,13 +47,13 @@ const Navbar = () => {
         <div className="hidden md:flex items-center gap-6">
           <Link
             href="/signup"
-            className="bg-primary px-2 py-1 lg:px-6 lg:py-4 border border-primary rounded-lg text-black leading-5 hover:bg-black hover:text-white transition-all duration-300"
+            className="bg-primary font-medium uppercase px-2 py-1 lg:px-6 lg:py-4 border border-primary rounded-lg text-black leading-5 hover:bg-black hover:text-white transition-all duration-300"
           >
             Signup
           </Link>
           <Link
             href="/login"
-            className="hover:bg-primary px-2 py-1 lg:px-6 lg:py-4 border border-primary rounded-lg hover:text-black leading-5 bg-black text-white transition-all duration-300"
+            className="hover:bg-primary uppercase font-medium px-2 py-1 lg:px-6 lg:py-4 border border-primary rounded-lg hover:text-black leading-5 bg-black text-white transition-all duration-300"
           >
             Login
           </Link>
