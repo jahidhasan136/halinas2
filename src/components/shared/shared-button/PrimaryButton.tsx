@@ -3,15 +3,24 @@ import React from "react";
 interface PrimaryButtonProps {
   className?: string;
   text: string;
+  isLoading?: boolean;
+  type?: "submit" | "button" | "reset";
 }
 
-const PrimaryButton: React.FC<PrimaryButtonProps> = ({ className, text }) => {
+const PrimaryButton: React.FC<PrimaryButtonProps> = ({
+  className,
+  text,
+  isLoading = false,
+  type = "button",
+}) => {
   return (
-    <div
-      className={`cursor-pointer py-2 md:py-5 rounded-lg leading-5 uppercase text-black bg-primary ${className}`}
+    <button
+      className={`cursor-pointer py-2 md:py-5 rounded-lg leading-5 uppercase text-black bg-primary hover:bg-white border border-primary transition-all duration-300 w-full ${className}`}
+      type={type}
+      disabled={isLoading}
     >
       {text}
-    </div>
+    </button>
   );
 };
 
