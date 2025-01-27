@@ -3,7 +3,7 @@ import React from "react";
 
 const page = () => {
   return (
-    <div className="container grid place-content-center items-center text-center min-h-screen pt-20 pb-[120px]">
+    <div className="container grid place-content-center items-center text-center min-h-screen pt-10 md:pt-20 pb-[60px] md:pb-[120px]">
       <SignupPage />
     </div>
   );

@@ -33,7 +33,7 @@ const SignupPage = () => {
     // } catch (error) {}
   };
   return (
-    <div className="w-[636px]">
+    <div className="md:w-[636px]">
       <div className="grid gap-6">
         <h1 className="text-5xl font-bold leading-[57px] capitalize text-black">
           Sign Up
