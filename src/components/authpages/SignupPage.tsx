@@ -6,6 +6,7 @@ import { FaXTwitter } from "react-icons/fa6";
 import PrimaryButton from "../shared/shared-button/PrimaryButton";
 import { SubmitHandler, useForm } from "react-hook-form";
 import { IFormInput } from "@/types/formInput";
+import Link from "next/link";
 // import { useRouter } from "next/navigation";
 // import { toast } from "sonner";
 
@@ -61,7 +62,7 @@ const SignupPage = () => {
         <p className="uppercase text-black2/70 font-medium leading-5">or</p>
         <div className="border-black2/20 border-b w-full"></div>
       </div>
-      <div>
+      <div className="mb-4">
         <form onSubmit={handleSubmit(onSubmit)}>
           <div className="grid gap-6">
             <div className="grid gap-4">
@@ -162,6 +163,12 @@ const SignupPage = () => {
           />
         </form>
       </div>
+      <Link
+        href="/login"
+        className="text-black2 leading-5 font-medium text-base"
+      >
+        Already have an account? <span className="font-bold">log in</span>
+      </Link>
     </div>
   );
 };
