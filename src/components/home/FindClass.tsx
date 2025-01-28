@@ -16,7 +16,7 @@ const FindClass = () => {
   return (
     <div className="container mt-[60px] lg:mt-[120px]">
       <div className="grid gap-4 xl:gap-0 xl:flex justify-between items-center mb-11">
-        <h2 className="text-black text-5xl font-extrabold leading-[57px] capitalize text-nowrap">
+        <h2 className="text-black text-5xl font-extrabold leading-[57px] capitalize text-nowrap tracking-[0.48px]">
           Find A Class
         </h2>
         <p className="text-black2 text-base leading-[25px] capitalize">

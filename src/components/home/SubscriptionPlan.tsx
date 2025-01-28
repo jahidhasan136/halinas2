@@ -5,7 +5,7 @@ const SubscriptionPlan = () => {
   return (
     <div className="container text-center mt-[30px] grid gap-11">
       <div className="grid gap-6">
-        <h1 className="text-3xl md:text-5xl font-extrabold md:leading-[57px] text-black capitalize">
+        <h1 className="text-3xl md:text-5xl font-extrabold md:leading-[57px] text-black capitalize tracking-[0.48px]">
           at home workouts for every fitness level
         </h1>
         <p className="text-base leading-[25px] capitalize">
